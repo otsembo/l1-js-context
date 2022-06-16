@@ -39,6 +39,24 @@ class Person {
 }
 // create person instance
 // const person = new Person("John Doe", 50)
-// Access context inside class
+// TODO: Access context inside class from function
 // person.speak("Howdie")
+
+// TODO: ACCESSING OBJECT PARAMETERS IN FUNCTIONS USING this
+function displayMedia(mediaType){
+    print(`Details of: ${mediaType}`)
+    print(this)
+}
+// using call 
+// displayMedia.call( {game:"Pinball", year:1992}, "game")
+
+
+// using apply
+// displayMedia.apply( {video:"How to fly", year:2022}, ["video"] )
+
+
+// permanently lock with bind
+// const media = displayMedia.bind( {audio:"Mbwe Mbwe", year:2022})
+// media("music")
+
 
